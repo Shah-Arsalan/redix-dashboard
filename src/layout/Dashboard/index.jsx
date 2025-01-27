@@ -14,6 +14,7 @@ import Loader from 'components/Loader';
 import Breadcrumbs from 'components/@extended/Breadcrumbs';
 
 import { handlerDrawerOpen, useGetMenuMaster } from 'api/menu';
+import BuildingEquipment from 'components/BuildingEquipment';
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
@@ -32,6 +33,7 @@ export default function DashboardLayout() {
     <Box sx={{ display: 'flex', width: '100%' }}>
       <Header />
       <Drawer />
+      <BuildingEquipment/>
       <Box component="main" sx={{ width: 'calc(100% - 260px)', flexGrow: 1, p: { xs: 2, sm: 3 } }}>
         <Toolbar />
         <Breadcrumbs navigation={navigation} title />
